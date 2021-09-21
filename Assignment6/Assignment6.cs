@@ -1,22 +1,5 @@
-﻿/*    CTS Common Type System
-
-    //value type vs reference type
-/*
- * 1. value types are created using enum or Struct but referency types are created using class, interface, array
- * 2. value types are stored in stack memory but reference type are stored in heap memory.
- * 3. value type can not accept null but reference type can accept null
- * 4. value type directly holds the value but referenc type holds the memory address of the value.
- * 5. garbage collector can collect only reference type
- * 
- * 
- * 
-1. Find the factorial of a number
-6x5x4x3x2x1
-2. if a number is prime or not
-3. if a year is leap or not
-4. LCM of two number
-*/
-
+﻿                      //C# coding Assignment1: 9.21
+                      /*plz uncomment each question to run and check the result */
 using System;
 
 namespace ConsoleApp1
@@ -74,31 +57,31 @@ namespace ConsoleApp1
     //}
 
     /* #4 */
-    public class LCM
-    {
-        public static void Main()
-        {
-            int i, n1, n2, max, lcm = 1;
-            Console.Write("\n\n");
-            Console.Write("Determine the LCM of two numbers:\n");
-            Console.Write("-----------------------------------");
-            Console.Write("\n\n");
-            Console.Write("Input 1st number for LCM: ");
-            n1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Input 2nd number for LCM: ");
-            n2 = Convert.ToInt32(Console.ReadLine());
-            max = (n1 > n2) ? n1 : n2;
-            for (i = max; ; i += max)
-            {
-                if (i % n1 == 0 && i % n2 == 0)
-                {
-                    lcm = i;
-                    break;
-                }
-            }
-            Console.Write("\nLCM of {0} and {1} = {2}\n\n", n1, n2, lcm);
-        }
-    }
+    //public class LCM
+    //{
+    //    public static void Main()
+    //    {
+    //        int i, n1, n2, max, lcm = 1;
+    //        Console.Write("\n\n");
+    //        Console.Write("Determine the LCM of two numbers:\n");
+    //        Console.Write("-----------------------------------");
+    //        Console.Write("\n\n");
+    //        Console.Write("Input 1st number for LCM: ");
+    //        n1 = Convert.ToInt32(Console.ReadLine());
+    //        Console.Write("Input 2nd number for LCM: ");
+    //        n2 = Convert.ToInt32(Console.ReadLine());
+    //        max = (n1 > n2) ? n1 : n2;
+    //        for (i = max; ; i += max)
+    //        {
+    //            if (i % n1 == 0 && i % n2 == 0)
+    //            {
+    //                lcm = i;
+    //                break;
+    //            }
+    //        }
+    //        Console.Write("\nLCM of {0} and {1} = {2}\n\n", n1, n2, lcm);
+    //    }
+    //}
 }
 
 
